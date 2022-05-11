@@ -1,10 +1,98 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="City of Sedona»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-</body>
+    <main class="main-container">
+      <h1 class="visually-hidden">Sedona</h1>
+      <div class="media-wrapper">
+        <section class="media-header">
+          <a class="main-logo">
+            <img class="sedona-catalog" src="img/sedona-catalog.svg" width="229" height="39" alt="WELCOME to the gorgeous SEDONA «because the Grand Canyon sucks!».">
+          </a>
+          <h2>Фото и видео</h2>
+          <p class="">Не можете решится на путешествие<br>из за курса? Фотографии помогут вам<br>забыть о политике и экономике.</p>
+          <ul class="media">
+            <li class="open-spaces">
+              <img class="open-spaces-img" src="img/open-spaces.jpg" height="280" width="280" alt="Просторы">
+              <h3 class="header-reasons">Неродные просторы</h3>
+              <p class="photo-author">Автор фото: Борис</p>
+              <img class="like" src="img/like.svg" height="23" width="21" alt="Лайк">
+              <p class="rating">1350</p>
+            </li>
+            <li class="fauna">
+              <img class="fauna-img" src="img/fauna.jpg" height="280" width="280" alt="Фауна">
+              <h3 class="header-reasons">Местная растительность</h3>
+              <p class="photo-author">Автор фото: Сергей</p>
+              <img class="like" src="img/like.svg" height="23" width="21" alt="Лайк">
+              <p class="rating">143</p>
+            </li>
+            <li class="road">
+              <img class="road-img" src="img/road.jpg" height="280" width="280" alt="Дорога">
+              <h3 class="header-reasons">Дорога на север</h3>
+              <p class="photo-author">Автор фото: Петр</p>
+              <img class="like" src="img/like.svg" height="23" width="21" alt="Лайк">
+              <p class="rating">96</p>
+            </li>
+            <li class="bridge">
+              <img class="bridge-img" src="img/bridge.jpg" height="280" width="280" alt="Мост дьявола">
+              <h3 class="header-reasons">Мост дьявола</h3>
+              <p class="photo-author">Автор фото: Антон</p>
+              <img class="like" src="img/like.svg" height="23" width="21" alt="Лайк">
+              <p class="rating">254</p>
+            </li>
+          </ul>
+        </section>
+        <footer class="footer-main">
+          <h3 class="uncertainty">Все еще сомневаетесь?</h3>
+          <p class="uncertainty-description">Смотрите видеопрезентацию и<br>скорее за билетами, пока они не<br>подорожали в очередной раз!</p>
+          <img class="uncertainty-img" src="img/presentation.jpg" height="177" width="280" alt="Презентация">
+        </footer>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="hashtag">#visitsedona</a>
+        <div class="footer-social__link">
+          <a class="visually-hidden" href="#">vk</a>
+          <a class="visually-hidden" href="#">telegram</a>
+          <a class="visually-hidden" href="#">youtube</a>
+        </div>
+        <div class="footer-social__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="creator-link" href="https://htmlacademy.ru">
+            <img src="img/htmlacademy-logo.svg" height="34" width="27" alt="html-academy"></a>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
