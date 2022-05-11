@@ -1,10 +1,160 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Форма отзыва</title>
   </head>
-  <body>
+  <body class="form-page">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="City of Sedona»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="main-container">
+      <h1 class="visually-hidden">Sedona</h1>
+      <div class="form-wrapper">
+        <section class="form-description">
+          <a class="main-logo">
+            <img class="sedona-catalog" src="img/sedona-catalog.svg" width="229" height="39" alt="WELCOME to the gorgeous SEDONA «because the Grand Canyon sucks!».">
+          </a>
+          <div class="review">
+            <p class="review-header">Оставьте свой отзыв</p>
+            <p class="review-description">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+          </div>
+        </section>
+        <div class="form-name">
+          <form class="form-group" id="form-group" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="introduce-myself">
+              <legend class="contacts-title">Представьтесь:</legend>
+              <input class="field-first-name" type="text" name="first-name">Имя<sup>*</sup>:
+              <input class="field-second-name" type="text" name="second-name">Фамилия<sup>*</sup>:
+              <input class="field-patronymic" type="text" name="patronymic">Отчество<sup>*</sup>:
+            </fieldset>
+            <fieldset>
+              <legend class="contacts-title">Контактная информация:</legend>
+              <label>
+                <input type="tel" name="phone">
+                <span>Контактный телефон:</span>
+              </label>
+              <img class="phone" src="img/phone.svg" height="18" width="18" alt="Телефон">
+              <label>
+                <input type="email" name="e-mail">
+                <span>Электронная почта:</span>
+              </label>
+              <img class="e-mail" src="img/e-mail.svg" height="12" width="16" alt="Конверт">
+            </fieldset>
+            <fieldset class="impression">
+              <legend>Ваше общее впечатление:</legend>
+              <ul class="review-grade">
+                <li class="positive-grade">
+                  <label>
+                    <input type="radio" name="types-grade" value="positive-grade" checked>
+                      Скорее положительное
+                  </label>
+                </li>
+                <li class="negative-grade">
+                  <label>
+                    <input type="radio" name="types-grade" value="negative-grade">
+                      Скорее отрицательное
+                  </label>
+                </li>
+                <li class="difficulty-grade">
+                  <label>
+                    <input type="radio" name="types-grade" value="difficulty-grade">
+                      Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="places-visited">
+              <legend class="places-visited-contents">Посещенные достопримечательности:</legend>
+              <ul class="places">
+                <li class="bridge">
+                  <label>
+                    <input type="checkbox" name="attraction" value="bridge" checked>
+                      Мост Дьявола
+                  </label>
+                </li>
+                <li class="mountain">
+                  <label>
+                    <input type="checkbox" name="attraction" value="mountain" checked >
+                      Гора-Колокол
+                  </label>
+                </li>
+                <li class="park">
+                  <label>
+                    <input type="checkbox" name="attraction" value="park" checked>
+                      Слайд-парк
+                  </label>
+                </li>
+                <li class="rocks">
+                  <label>
+                    <input type="checkbox" name="attraction">
+                      Красные скалы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="emotion-grade-form">
+              <span>Опишите свои эмоции:</span>
+              <input class="emotion-grade" type="text" name="emotion-grade">
+              <button class="button-review" type="submit">Оставить отзыв</button>
+              <div><sup>*</sup> - Обязательные поля</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="hashtag">#visitsedona</a>
+        <div class="footer-social__link">
+          <a class="visually-hidden" href="#">vk</a>
+          <a class="visually-hidden" href="#">telegram</a>
+          <a class="visually-hidden" href="#">youtube</a>
+        </div>
+        <div class="footer-social__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="creator-link" href="https://htmlacademy.ru">
+            <img src="img/htmlacademy-logo.svg" height="34" width="27" alt="html-academy"></a>
+        </div>
+      </section>
+    </footer>
+
+    <section class="modal-error visually-hidden">
+      <p class="modal-header">Что-то пошло не так!</p>
+      <p class="modal-main">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-button" type="button" >Ok</button>
+    </section>
+
+    <section class="modal-success visually-hidden">
+      <p class="modal-header">Ваш отзыв отправлен!</p>
+      <p class="modal-main">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опублекуем его на сайте.</p>
+      <div class="modal-button">
+        <button class="modal-button" type="button">Закрыть окно</button>
+      </div>
+    </section>
   </body>
 </html>
